@@ -1,4 +1,4 @@
-# Information Visualisation — Module Task
+# Information Visualisation
 
 **Topic:** Development of electricity production in Switzerland — how the fleet of
 power plants was built up across the country and across technologies, and how this

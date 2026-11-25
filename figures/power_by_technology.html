@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@6"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@7"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "layer": [{"data": {"name": "data-f5ea7a40cc1f48eca63304b4665a69a7"}, "mark": {"type": "area"}, "encoding": {"color": {"field": "MainCategory", "title": "Technology", "type": "nominal"}, "x": {"field": "BeginningOfOperation", "title": "Year", "type": "quantitative"}, "y": {"field": "TotalPower", "title": "Power added (kW)", "type": "quantitative"}}}, {"data": {"name": "data-773729194d559a8c346168e94e3f709e"}, "mark": {"type": "line", "color": "blue"}, "encoding": {"x": {"axis": {"format": "d"}, "field": "BeginningOfOperation", "title": "Year", "type": "quantitative"}, "y": {"field": "InstalledPower", "title": "Power installed (kW)", "type": "quantitative"}}}], "resolve": {"scale": {"y": "independent"}}, "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json", "datasets": {"data-f5ea7a40cc1f48eca63304b4665a69a7": [{"BeginningOfOperation": 1863, "Canton": "LU", "MainCategory": "Hydroelectric power", "TotalPower": 200.0, "InstalledPower": 200.0}, {"BeginningOfOperation": 1886, "Canton": "LU", "MainCategory": "Hydroelectric power", "TotalPower": 740.0, "InstalledPower": 940.0}, {"BeginningOfOperation": 1888, "Canton": "SO", "MainCategory": "Hydroelectric power", "TotalPower": 240.0, "InstalledPower": 1180.0}, {"BeginningOfOperation": 1890, "Canton": "NW", "MainCategory": "Hydroelectric power", "TotalPower": 240.0, "InstalledPower": 1420.0}, {"BeginningOfOperation": 1891, "Canton": "ZG", "MainCategory": "Hydroelectric power", "TotalPower": 5315.0, "InstalledPower": 6735.0}, {"BeginningOfOperation": 1892, "Canton": "AG", "MainCategory": "Hydroelectric power", "TotalPower": 120.0, "InstalledPower": 6855.0}, {"BeginningOfOperation": 1894, "Canton": "SG", "MainCategory": "Hydroelectric power", "TotalPower": 300.0, "InstalledPower": 7155.0}, {"BeginningOfOperation": 1894, "Canton": "TI", "MainCategory": "Hydroelectric power", "TotalPower": 950.0, "InstalledPower": 8105.0}, {"BeginningOfOperation": 1896, "Canton": "FR", "MainCategory": "Hydroelectric power", "TotalPower": 27800.0, "InstalledPower": 35905.0}, {"BeginningOfOperation": 1897, "Canton": "ZG", "MainCategory": "Hydroelectric power", "TotalPower": 1747.0, "InstalledPower": 37652.0}, {"BeginningOfOperation": 1898, "Canton": "LU", "MainCategory": "Hydroelectric power", "TotalPower": 100.0, "InstalledPower": 37752.0}, {"BeginningOfOperation": 1899, "Canton": "SG", "MainCategory": "Hydroelectric power", "TotalPower": 150.0, "InstalledPower": 37902.0}, {"BeginningOfOperation": 1888, "Canton": "BE", "MainCategory": "Photovoltaic", "TotalPower": 120.0, "InstalledPower": 120.0}, {"BeginningOfOperation": 1894, "Canton": "JU", "MainCategory": "Photovoltaic", "TotalPower": 7550.0, "InstalledPower": 7670.0}, {"BeginningOfOperation": 1899, "Canton": "GL", "MainCategory": "Photovoltaic", "TotalPower": 2400.0, "InstalledPower": 10070.0}, {"BeginningOfOperation": 1893, "Canton": "SG", "MainCategory": "Storage power plant", "TotalPower": 550.0, "InstalledPower": 550.0}, {"BeginningOfOperation": 1894, "Canton": "AG", "MainCategory": "Storage power plant", "TotalPower": 16000.0, "InstalledPower": 16550.0}], "data-773729194d559a8c346168e94e3f709e": [{"BeginningOfOperation": 1863, "Canton": "LU", "MainCategory": "Hydroelectric power", "TotalPower": 200.0, "InstalledPower": 200.0}, {"BeginningOfOperation": 1886, "Canton": "LU", "MainCategory": "Hydroelectric power", "TotalPower": 740.0, "InstalledPower": 940.0}, {"BeginningOfOperation": 1888, "Canton": "SO", "MainCategory": "Hydroelectric power", "TotalPower": 240.0, "InstalledPower": 1180.0}, {"BeginningOfOperation": 1888, "Canton": "BE", "MainCategory": "Photovoltaic", "TotalPower": 120.0, "InstalledPower": 1300.0}, {"BeginningOfOperation": 1890, "Canton": "NW", "MainCategory": "Hydroelectric power", "TotalPower": 240.0, "InstalledPower": 1540.0}, {"BeginningOfOperation": 1891, "Canton": "ZG", "MainCategory": "Hydroelectric power", "TotalPower": 5315.0, "InstalledPower": 6855.0}, {"BeginningOfOperation": 1892, "Canton": "AG", "MainCategory": "Hydroelectric power", "TotalPower": 120.0, "InstalledPower": 6975.0}, {"BeginningOfOperation": 1893, "Canton": "SG", "MainCategory": "Storage power plant", "TotalPower": 550.0, "InstalledPower": 7525.0}, {"BeginningOfOperation": 1894, "Canton": "JU", "MainCategory": "Photovoltaic", "TotalPower": 7550.0, "InstalledPower": 15075.0}, {"BeginningOfOperation": 1894, "Canton": "AG", "MainCategory": "Storage power plant", "TotalPower": 16000.0, "InstalledPower": 31075.0}, {"BeginningOfOperation": 1894, "Canton": "TI", "MainCategory": "Hydroelectric power", "TotalPower": 950.0, "InstalledPower": 32025.0}, {"BeginningOfOperation": 1894, "Canton": "SG", "MainCategory": "Hydroelectric power", "TotalPower": 300.0, "InstalledPower": 32325.0}, {"BeginningOfOperation": 1896, "Canton": "FR", "MainCategory": "Hydroelectric power", "TotalPower": 27800.0, "InstalledPower": 60125.0}, {"BeginningOfOperation": 1897, "Canton": "ZG", "MainCategory": "Hydroelectric power", "TotalPower": 1747.0, "InstalledPower": 61872.0}, {"BeginningOfOperation": 1898, "Canton": "LU", "MainCategory": "Hydroelectric power", "TotalPower": 100.0, "InstalledPower": 61972.0}, {"BeginningOfOperation": 1899, "Canton": "SG", "MainCategory": "Hydroelectric power", "TotalPower": 150.0, "InstalledPower": 62122.0}, {"BeginningOfOperation": 1899, "Canton": "GL", "MainCategory": "Photovoltaic", "TotalPower": 2400.0, "InstalledPower": 64522.0}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

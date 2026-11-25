@@ -1,0 +1,17 @@
+# generated charts (rebuild with the scripts)
+figures/
+
+# system and editor files
+.DS_Store
+.idea/
+.Rhistory
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+
+# data (large; download links belong in the README)
+raw_data/
+
+# private / course files
+ProjectRequirements.md
+Notes.md
